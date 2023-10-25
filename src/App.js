@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './components/Header';
 import './assets/scss/style.scss';
 import ShowcaseSection from './components/ShowcaseSection';
