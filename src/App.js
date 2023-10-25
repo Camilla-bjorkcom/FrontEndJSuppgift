@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import './assets/scss/style.scss';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ShowcaseSection from './components/ShowcaseSection';
 import BrandsSection from './components/BrandsSection';
 import FeaturesSection from './components/FeaturesSection';
