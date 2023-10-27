@@ -1,27 +1,20 @@
-import Header from './components/Header';
+
 import './assets/scss/style.scss';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import ShowcaseSection from './components/ShowcaseSection';
-import BrandsSection from './components/BrandsSection';
-import FeaturesSection from './components/FeaturesSection';
-import AboutCompanySection from './components/AboutCompanySection';
-import WhyChooseUsSection from './components/WhyChooseUsSection';
-import ProjectandCaseSection from './components/ProjectandCaseSection';
-import OurServicesSection from './components/OurServicesSection';
+import Contact from './views/Contact';
+import Home from './views/Home';
+import News from './views/News';
+import NotFound from './views/NotFound';
+import NewsDetails from './views/NewsDetails'
+
 
 function App() {
   return (
     <div className="wrapper">
-      <Header/>
-      <main>
-        <ShowcaseSection />
-        <BrandsSection />
-        <FeaturesSection />
-        <AboutCompanySection />
-        <OurServicesSection />
-        <WhyChooseUsSection />
-        <ProjectandCaseSection />
-      </main>
+      <Home />
+      <Contact />
+      <News />
+      <NewsDetails />
+      <NotFound />
     </div>
   );
 }
