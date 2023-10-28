@@ -2,6 +2,7 @@ import React from 'react'
 import img_founder_CEO from '../assets/images/founder_CEO.jpg'
 import ButtonDark from './Generics/ButtonDark'
 import ButtonRound from './Generics/ButtonRound'
+import { Link } from 'react-router-dom';
 
 const AboutCompanySection = () => {
   return (
@@ -25,7 +26,7 @@ const AboutCompanySection = () => {
             <div className="about-btn">
                 <ButtonDark text="Learn More" url="#"/>
                 <ButtonRound url="#"/>
-                <a href="#">Intro Video</a>
+                <Link to="#">Intro Video</Link>
             </div>
         </div>
     </div>

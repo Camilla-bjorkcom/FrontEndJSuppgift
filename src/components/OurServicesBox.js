@@ -3,12 +3,6 @@ import ButtonRound from './Generics/ButtonRound'
 
 const OurServicesBox = ({ title, description, url, active }) => {
 
-    // const [active, setActive] = useState(false)
-
-   
-
-    
-
     return (
         <div className={`box ${active ? 'active-box' : ''}`}>
             <div className="line" alt="black-line"></div>

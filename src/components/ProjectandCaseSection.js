@@ -1,44 +1,48 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ButtonDark from './Generics/ButtonDark'
+import ProjectandCaseArticle from './ProjectandCaseArticle'
 
 const ProjectandCaseSection = () => {
-  return (
-    <section className="projectandcase">
-    <div className="container">
-        <div className="section-title">
-            <div className="title">Project & Case Studies</div>
-            <h2>Let’s Looks Our Global Projects</h2>
-        </div>
-        <div className="projects">
-            <article>
-                <img src="images/article-image-1.png" alt="A mans hands reading a business paper" />
-                <h3>Grow your business</h3>
-                <a href="#">Read More <i className="fa-regular fa-arrow-up-right"></i></a>
-            </article>
-            <article>
-                <img src="images/article-image-2.png" alt="Pink apple product" />
-                <h3>Why your client needs a responsive website </h3>
-                <a href="#">Read More <i className="fa-regular fa-arrow-up-right"></i></a>
-            </article>
-            <article>
-                <img src="images/article-image-3.png" alt="Desk with office supplies" />
-                <h3>Educate your employees to get better results</h3>
-                <a href="#">Read More <i className="fa-regular fa-arrow-up-right"></i></a>
-            </article>
-            <article>
-                <img src="images/article-image-4.png" alt="Laptop with business intellegence insights" />
-                <h3>Business Insights is a important piece of your business</h3>
-                <a href="#">Read More <i className="fa-regular fa-arrow-up-right"></i></a>
-            </article>
-        </div>
-        <div className="btn-parent">
-            <ButtonDark text="All Recent Projects" url="services/All-recent-projects/"/>
-        </div>
-    </div>
 
+    const [articles, setArticles] = useState([]);
 
-</section>
-  )
+    useEffect(() => {
+
+        const getArticle = async (id) => {
+            try {
+                const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
+                const data = await result.json();
+                setArticles(data);
+                const params = new URLSearchParams(window.location.search);
+                const id = params.get('id');
+            }
+            catch (error) {
+                console.error(error);
+            }
+
+            articles = await getArticle(id);
+        }
+    }
+        , [])
+
+    return (
+        <section className="projectandcase">
+            <div className="container">
+                <div className="section-title">
+                    <div className="title">Project & Case Studies</div>
+                    <h2>Let's Looks Our Global Projects</h2>
+                </div>
+                {
+                    articles.map(article => (
+                        <ProjectandCaseArticle key={article.id} title={article.title} imageUrl={article.imageUrl} />
+                    ))
+                }
+                <div className="btn-parent">
+                    <ButtonDark text="All Recent Projects" url="services/All-recent-projects/" />
+                </div>
+            </div>
+        </section>
+    )
 }
-
+// content={article.content} author={article.author} published={article.published} category={article.category} 
 export default ProjectandCaseSection

@@ -309,6 +309,14 @@ header .container .menu .main-menu .btn-yellow {
   font-weight: 400;
 }
 
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
 .connect {
   padding: 100px 30px;
   background-color: #F0EFE9;

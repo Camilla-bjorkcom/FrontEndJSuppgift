@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ButtonRound = ({url}) => {
   return (
-    <a href={url}><button className="round-btn" type="button"><i className="fa-sharp fa-solid fa-play"></i></button></a>
+    <Link to={url}><button className="round-btn" type="button"><i className="fa-sharp fa-solid fa-play"></i></button></Link>
   )
 }
 

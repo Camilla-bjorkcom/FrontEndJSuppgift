@@ -1,7 +1,6 @@
 import React from 'react';
 import img_logo_Crito from '../assets/images/Logo-Crito.svg';
 import Button from './Generics/ButtonYellow';
-import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 
 const NavSection = () => {

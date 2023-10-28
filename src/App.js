@@ -15,7 +15,7 @@ function App() {
       <Route path='contact' element={<Contact />} />
       <Route path='news' element={<News />} />
       <Route path='newsdetails' element={<NewsDetails />} />
-      <Route path='notfound404' element={<NotFound />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
 
   );
