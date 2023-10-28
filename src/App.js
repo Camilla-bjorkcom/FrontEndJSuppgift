@@ -17,6 +17,7 @@ function App() {
       <Route path='newsdetails' element={<NewsDetails />} />
       <Route path='notfound404' element={<NotFound />} />
     </Routes>
+
   );
 }
 

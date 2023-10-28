@@ -1,14 +1,16 @@
-import React from 'react'
-import img_logo_Crito from '../assets/images/Logo-Crito.svg'
-import Button from './Generics/ButtonYellow'
+import React from 'react';
+import img_logo_Crito from '../assets/images/Logo-Crito.svg';
+import Button from './Generics/ButtonYellow';
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const NavSection = () => {
     return (
         <section className="nav-section">
             <div className="container">
                 <a href="home.html"><img src={img_logo_Crito} alt="Logo-Crito" /></a>
-               
-               
+
+
                 <div className="menu">
                     <div className="top-menu">
                         <div className="contact-information">
@@ -33,12 +35,7 @@ const NavSection = () => {
                         </div>
                     </div>
                     <div className="main-menu">
-                        <nav>
-                            <a className="active" href="home.html">Home</a>
-                            <a href="#">Service</a>
-                            <a href="#">News</a>
-                            <a href="contact.html">Contact</a>
-                        </nav>
+                        <Navbar />
                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                             <Button text="Login" url="/services/login" />
                         </div>
