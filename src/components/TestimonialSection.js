@@ -7,27 +7,27 @@ const TestimonialSection = () => {
 
         {
             reviewsText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantiu libero ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate",
-            imgCustomer: "./assets/images/Cassandra-Warren.png",
+            imgCustomer: "../assets/images/Cassandra-Warren.png",
             altText: "Cassandra Warren, customer",
             name: "Cassandra Warren",
             title: "Business Manager, Dorfus",
-            img: "./assets/images/Star.svg",
+            img: "../assets/images/Star.svg",
         },
         {
             reviewsText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantiu libero ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate",
-            imgCustomer: "./assets/images/Amanda-Tulling.png",
+            imgCustomer: "../assets/images/Amanda-Tulling.png",
             altText: "Amanda Tulling, customer",
             name: "Cassandra Warren",
             title: "Senior Developer, Square",
-            img: "./assets/images/Star.svg",
+            img: "../assets/images/Star.svg",
         },
         {
             reviewsText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantiu libero ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate",
-            imgCustomer: "./assets/images/Jack-McDogglas.png",
+            imgCustomer: "../assets/images/Jack-McDogglas.png",
             altText: "Jack McDogglas, customer",
             name: "Jack McDogglas",
             title: "Key Account Manager, Gobona",
-            img: "./assets/images/Star.svg",
+            img: "../assets/images/Star.svg",
         },
     ]);
 
