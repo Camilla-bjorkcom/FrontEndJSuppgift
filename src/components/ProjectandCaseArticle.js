@@ -13,21 +13,6 @@ const ProjectandCaseArticle = ({ title, imageUrl }) => {
                 <h3>{title}</h3>
                 <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
             </article>
-            {/* <article>
-                <img src={imageUrl} alt="Pink apple product" />
-                <h3>{title}</h3>
-                <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
-            </article> */}
-            {/* <article>
-                <img src={imageUrl} alt="Desk with office supplies" />
-                <h3>{title}</h3>
-                <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
-            </article>
-            <article>
-                <img src={imageUrl} alt="Laptop with business intellegence insights" />
-                <h3>{title}</h3>
-                <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
-            </article> */}
 </>
     )
 }

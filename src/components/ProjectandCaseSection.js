@@ -17,8 +17,6 @@ const ProjectandCaseSection = () => {
                 const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles`);
                 const data = await result.json();
                 setArticles(data);
-
-                console.log(setArticles)
             }
             catch (error) {
                 console.error(error);
