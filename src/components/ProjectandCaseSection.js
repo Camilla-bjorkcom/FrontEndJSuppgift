@@ -7,23 +7,23 @@ const ProjectandCaseSection = () => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
+        getArticles();
+    
+        }
+        , [])
 
-        const getArticle = async (id) => {
+        const getArticles = async () => {
             try {
-                const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
+                const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles`);
                 const data = await result.json();
-                setArticles(data);
-                const params = new URLSearchParams(window.location.search);
-                const id = params.get('id');
+                setArticles(data.slice(0,5));
+
+                console.log(setArticles)
             }
             catch (error) {
                 console.error(error);
             }
-
-            articles = await getArticle(id);
         }
-    }
-        , [])
 
     return (
         <section className="projectandcase">
@@ -44,5 +44,8 @@ const ProjectandCaseSection = () => {
         </section>
     )
 }
-// content={article.content} author={article.author} published={article.published} category={article.category} 
+// content={article.content} author={article.author} published={article.published} category={article.category}                
+
+// const params = new URLSearchParams(window.location.search);
+// const id = params.get('id');
 export default ProjectandCaseSection

@@ -2,37 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-// // GET ARTICLE
-// const getArticle = async (id) => {
-//     try {
-//         const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
-//         const articles = await result.json();
 
-//         return articles;
-//     }
-//     catch (error) {
-//         console.error(error);
-//     }
-// }
-
-// //DISPLAY ARTICLE
-// const displayArticle = async () => {
-//     const params = new URLSearchParams(window.location.search);
-//     const id = params.get('id');
-
-//     const article = await getArticle(id);
-
-//     return article;
-// }
 
 
 const ProjectandCaseArticle = ({ title, imageUrl }) => {
+
     return (
-        // //DISPLAY ARTICLE
-
-
-        <div className = "projects" >
-            {/* SE OM GET API // https://www.youtube.com/watch?v=F1AyLE_pf8Y&list=PLXIf5ibIbJuwCUVWUmotnFfmmVXeasMR_&index=2 */ }
+        <div className="projects" >
+            {/* SE OM GET API // https://www.youtube.com/watch?v=F1AyLE_pf8Y&list=PLXIf5ibIbJuwCUVWUmotnFfmmVXeasMR_&index=2 */}
+            {/* https://youtu.be/KURg_WvTntk?t=4128 */}
             < article >
                 <img src={imageUrl} alt="A mans hands reading a business paper" />
                 <h3>{title}</h3>
@@ -58,4 +36,33 @@ const ProjectandCaseArticle = ({ title, imageUrl }) => {
     )
 }
 
-export default ProjectandCaseArticle
+export default ProjectandCaseArticle 
+
+
+// //DISPLAY ARTICLE
+// const displayArticle = async () => {
+//     const params = new URLSearchParams(window.location.search);
+//     const id = params.get('id');
+
+//     const article = await getArticle(id);
+
+//     return article;
+// }
+
+
+// const [article, setArticle] = useState([]);
+
+
+    // useEffect(() => {
+    //     // displayArticle();
+    //     console.log('running');
+    // }, [])
+
+    // const displayArticle = () => {
+    //     // const params = new URLSearchParams(window.location.search); // 
+    //     const {id} = useParams()
+    //     const id = params.get('id'); 
+
+    //     setArticle(id);
+
+    // }

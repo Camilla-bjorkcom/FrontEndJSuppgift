@@ -20,7 +20,7 @@ function App() {
 
   );
 }
-
+// <Route path='details/:id' element={<NotFound />} />
 
 <div className="wrapper">
 
