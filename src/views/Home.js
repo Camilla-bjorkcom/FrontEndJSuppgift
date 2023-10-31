@@ -7,6 +7,7 @@ import AboutCompanySection from '../components/AboutCompanySection'
 import OurServicesSection from '../components/OurServicesSection'
 import WhyChooseUsSection from '../components/WhyChooseUsSection'
 import ProjectandCaseSection from '../components/ProjectandCaseSection'
+import OurTeamSection from '../components/OurTeamSection';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <OurServicesSection />
         <WhyChooseUsSection />
         <ProjectandCaseSection />
+        <OurTeamSection />
       </main>
     </>
   )
