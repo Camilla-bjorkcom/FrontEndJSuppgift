@@ -2,26 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-
-
-
 const ProjectandCaseArticle = ({ title, imageUrl }) => {
 
     return (
-        <div className="projects" >
+      <>
             {/* SE OM GET API // https://www.youtube.com/watch?v=F1AyLE_pf8Y&list=PLXIf5ibIbJuwCUVWUmotnFfmmVXeasMR_&index=2 */}
             {/* https://youtu.be/KURg_WvTntk?t=4128 */}
-            < article >
+            <article>
                 <img src={imageUrl} alt="A mans hands reading a business paper" />
                 <h3>{title}</h3>
                 <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
-            </article >
-            <article>
+            </article>
+            {/* <article>
                 <img src={imageUrl} alt="Pink apple product" />
                 <h3>{title}</h3>
                 <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
-            </article>
-            <article>
+            </article> */}
+            {/* <article>
                 <img src={imageUrl} alt="Desk with office supplies" />
                 <h3>{title}</h3>
                 <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
@@ -30,9 +27,8 @@ const ProjectandCaseArticle = ({ title, imageUrl }) => {
                 <img src={imageUrl} alt="Laptop with business intellegence insights" />
                 <h3>{title}</h3>
                 <Link to="/">Read More <i className="fa-regular fa-arrow-up-right"></i></Link>
-            </article>
-        </div >
-
+            </article> */}
+</>
     )
 }
 

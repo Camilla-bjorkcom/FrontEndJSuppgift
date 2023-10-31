@@ -1,0 +1,73 @@
+.projectandcase {
+  padding: 30px;
+}
+.projectandcase .container {
+  padding: 30px 0;
+}
+.projectandcase .container .section-title {
+  text-align: center;
+}
+.projectandcase .container .section-title h2 {
+  font-size: 28px;
+}
+@media (min-width: 576px) {
+  .projectandcase .container .section-title h2 {
+    font-size: 45px;
+  }
+}
+.projectandcase .container .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .projectandcase .container .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.projectandcase .container .projects article img {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.projectandcase .container .projects article h3 {
+  font-family: "DM sans", "sans-serif";
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #DAD9D3;
+}
+@media (min-width: 576px) {
+  .projectandcase .container .projects article h3 {
+    font-size: 22px;
+    padding-top: 35px;
+    padding-bottom: 16px;
+  }
+}
+.projectandcase .container .projects article a {
+  display: block;
+  text-align: right;
+  font-family: "Inter", "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: none;
+}
+@media (min-width: 576px) {
+  .projectandcase .container .projects article a {
+    padding: 15px;
+  }
+}
+.projectandcase .container .projects article a:hover {
+  text-decoration: underline;
+}
+.projectandcase .container .projects article a i {
+  margin-left: 3px;
+}
+.projectandcase .container .btn-parent .btn-dark {
+  margin-top: 50px;
+}
+@media (min-width: 576px) {
+  .projectandcase .container .btn-parent .btn-dark {
+    width: 250px;
+  }
+}

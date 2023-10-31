@@ -1,0 +1,176 @@
+.why-choose-us {
+  position: relative;
+}
+.why-choose-us .background-box {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .background-box {
+    display: block;
+    position: absolute;
+    background-color: #F0EFE9;
+    height: 430px;
+    width: 55%;
+    bottom: 0px;
+    right: 0;
+    z-index: -1;
+  }
+}
+.why-choose-us .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container {
+    flex-direction: row;
+    align-items: start;
+    gap: 200px;
+  }
+}
+.why-choose-us .container .left {
+  padding: 15px;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .left {
+    padding: 0;
+    flex: 1.5;
+    display: overflow;
+  }
+}
+.why-choose-us .container .left .section-title {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px;
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .left .section-title {
+    margin-bottom: 0px;
+    text-align: left;
+    margin-top: 60px;
+  }
+}
+.why-choose-us .container .left .section-title h2 {
+  font-size: 28px;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .left .section-title h2 {
+    font-size: 45px;
+  }
+}
+.why-choose-us .container .left .why {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "icon1" "argument1" "icon2" "argument2" "icon3" "argument3" "icon4" "argument4";
+}
+@media (min-width: 576px) {
+  .why-choose-us .container .left .why {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "icon1 argument1" "icon2 argument2" "icon3 argument3" "icon4 argument4";
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .left .why {
+    justify-content: initial;
+  }
+}
+.why-choose-us .container .left .why .icon {
+  border: 1px solid #F0EFE9;
+  border-radius: 50px;
+  height: 55px;
+  width: 55px;
+  position: relative;
+  margin: 0 auto;
+}
+.why-choose-us .container .left .why .icon i {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.why-choose-us .container .left .why .icon:hover {
+  background-color: #191919;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.why-choose-us .container .left .why #icon1 {
+  grid-area: icon1;
+}
+.why-choose-us .container .left .why #icon2 {
+  grid-area: icon2;
+}
+.why-choose-us .container .left .why #icon3 {
+  grid-area: icon3;
+}
+.why-choose-us .container .left .why #icon4 {
+  grid-area: icon4;
+}
+.why-choose-us .container .left .why .argument h3 {
+  margin-top: 20px;
+  font-family: "DM sans", "sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .why-choose-us .container .left .why .argument h3 {
+    text-align: left;
+  }
+}
+.why-choose-us .container .left .why .argument p {
+  font-size: 0.8em;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .why-choose-us .container .left .why .argument p {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .why-choose-us .container .left .why .argument p {
+    font-size: 1em;
+  }
+}
+.why-choose-us .container .left .why #argument1 {
+  grid-area: argument1;
+}
+.why-choose-us .container .left .why #argument2 {
+  grid-area: argument2;
+}
+.why-choose-us .container .left .why #argument3 {
+  grid-area: argument3;
+}
+.why-choose-us .container .left .why #argument4 {
+  grid-area: argument4;
+}
+.why-choose-us .container .right {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .right {
+    display: block;
+    position: relative;
+    flex: 2;
+  }
+}
+.why-choose-us .container .right .chooseus-image {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .right .chooseus-image {
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 160px;
+  }
+}

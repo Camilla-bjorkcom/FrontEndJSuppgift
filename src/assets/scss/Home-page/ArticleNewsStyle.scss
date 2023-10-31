@@ -1,0 +1,110 @@
+
+.article-news {
+    padding: 30px;
+    padding-bottom: 70px;
+
+    .container {
+
+        .upper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+
+            @media (min-width:1600px) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: end;
+            }
+
+            .section-title {
+                margin-bottom: 0;
+                text-align: center;
+
+                @media (min-width:992px) {
+                    text-align: left;
+                }
+
+                h2 {
+                    font-size: 28px;
+
+                    @media (min-width: 576px) {
+                        font-size: 45px;
+                    }
+                }
+            }
+
+
+            .btn-parent {
+                text-align: right;
+
+                .btn-outline {
+                    margin-top: 35px;
+
+                    @media (min-width: 1400px) {
+                        width: 200px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+        .show-articles {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 70px;
+            width: fit-content;
+            margin: auto;
+
+            @media (min-width: 1600px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .article {
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                @media (min-width:1600px) {
+                    align-items: start;
+                }
+
+                p {
+                    margin-top: 15px;
+                }
+
+                .img-and-date {
+                    position: relative;
+                    width: fit-content;
+
+                    .img-news {
+                        display: none;
+                        margin: auto;
+
+                        @media (min-width: 576px) {
+                            display: block;
+                        }
+                    }
+
+                    .date {
+                        position: absolute;
+                        left: 15px;
+                        top: 15px;
+                        display: none;
+
+                        @media (min-width: 576px) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dots {
+            padding-top: 50px;
+            text-align: center;
+        }
+    }
+}

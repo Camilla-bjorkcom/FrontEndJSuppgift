@@ -1,0 +1,107 @@
+
+.our-team {
+    background-color: #F0D082;
+
+    .container {
+        .upper {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 1400px) {
+                justify-content: space-between;
+                align-items: end;
+                flex-direction: row;
+            }
+
+            .section-title {
+                text-align: center;
+
+                @media (min-width: 1400px) {
+                    text-align: left;
+                }
+
+                h2 {
+                    font-size: 28px;
+
+                    @media (min-width: 576px) {
+                        font-size: 45px;
+                    }
+                }
+            }
+
+            .button-team {
+                text-align: center;
+                padding-bottom: 90px;
+
+                .btn-outline {
+                    margin-top: 35px;
+
+
+                    @media (min-width: 1400px) {
+                        width: 200px;
+                    }
+
+                }
+            }
+        }
+
+        .images-team {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+
+            @media (min-width: 1400px) {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .team-intro {
+                display: none;
+
+                @media (min-width:1400px) {
+                    display: block;
+                }
+
+                h3 {
+                    margin-top: 20px;
+                    font-family: 'DM sans', 'sans-serif';
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+
+            #active-team {
+                display: block;
+
+                #active-img {
+                    width: 70vw;
+
+                    @media (min-width:992px) {
+                        width: 40vw;
+                    }
+
+                    @media (min-width:1400px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            #active-team2 {
+                display: block;
+
+                #active-img2 {
+                    width: 70vw;
+
+                    @media (min-width:992px) {
+                        width: 40vw;
+                    }
+
+                    @media (min-width:1400px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

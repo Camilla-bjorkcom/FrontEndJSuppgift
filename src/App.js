@@ -1,5 +1,5 @@
 
-import './assets/scss/style.scss';
+import './assets/scss/index.scss';
 import Contact from './views/Contact';
 import Home from './views/Home';
 import News from './views/News';
