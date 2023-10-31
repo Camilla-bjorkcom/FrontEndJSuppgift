@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,900&family=Inter:wght@300;400;500;600;700&display=swap');
 
-@import './Buttons';
-@import './BaseStyle';
-@import './Header';
-@import './Buttons';
-@import './FooterStyle';
+@import './BaseStyle/Buttons';
+@import './BaseStyle/BaseStyle';
+@import './BaseStyle/Header';
+@import './BaseStyle/FooterStyle';
 @import './Home-page/AboutCompanyStyle';
 @import './Home-page/ArticleNewsStyle';
 @import './Home-page/BrandsStyle';
