@@ -9,6 +9,8 @@ import WhyChooseUsSection from '../components/WhyChooseUsSection'
 import ProjectandCaseSection from '../components/ProjectandCaseSection'
 import OurTeamSection from '../components/OurTeamSection';
 import TestimonialSection from '../components/TestimonialSection';
+import ArticleNewsSection from '../components/ArticleNewsSection';
+import NewsletterSection from '../components/NewsletterSection';
 
 const Home = () => {
   return (
@@ -24,6 +26,8 @@ const Home = () => {
         <ProjectandCaseSection />
         <OurTeamSection />
         <TestimonialSection />
+        <ArticleNewsSection />
+        <NewsletterSection />
       </main>
     </>
   )

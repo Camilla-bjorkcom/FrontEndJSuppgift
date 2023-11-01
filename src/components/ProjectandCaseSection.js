@@ -16,7 +16,7 @@ const ProjectandCaseSection = () => {
             try {
                 const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles`);
                 const data = await result.json();
-                setArticles(data);
+                setArticles(data.slice(0,4));
             }
             catch (error) {
                 console.error(error);
@@ -44,8 +44,4 @@ const ProjectandCaseSection = () => {
         </section>
     )
 }
-// content={article.content} author={article.author} published={article.published} category={article.category}                
-
-// const params = new URLSearchParams(window.location.search);
-// const id = params.get('id');
 export default ProjectandCaseSection

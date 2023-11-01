@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import TestimonialCustomer from './TestimonialCustomer';
+import starImg from '../assets/images/Star.svg';
+import CassandraWarrenImg from '../assets/images/Cassandra-Warren.png';
+import AmandaTullingImg from '../assets/images/Amanda-Tulling.png';
+import JackMcDogglasImg from '../assets/images/Jack-McDogglas.png';
+
 
 const TestimonialSection = () => {
 
@@ -7,27 +12,27 @@ const TestimonialSection = () => {
 
         {
             reviewsText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantiu libero ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate",
-            imgCustomer: "../assets/images/Cassandra-Warren.png",
+            imgCustomer: {CassandraWarrenImg},
             altText: "Cassandra Warren, customer",
             name: "Cassandra Warren",
             title: "Business Manager, Dorfus",
-            img: "../assets/images/Star.svg",
+            img: {starImg},
         },
         {
             reviewsText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantiu libero ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate",
-            imgCustomer: "../assets/images/Amanda-Tulling.png",
+            imgCustomer: {AmandaTullingImg},
             altText: "Amanda Tulling, customer",
             name: "Cassandra Warren",
             title: "Senior Developer, Square",
-            img: "../assets/images/Star.svg",
+            img: {starImg},
         },
         {
             reviewsText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantiu libero ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate",
-            imgCustomer: "../assets/images/Jack-McDogglas.png",
+            imgCustomer: {JackMcDogglasImg},
             altText: "Jack McDogglas, customer",
             name: "Jack McDogglas",
             title: "Key Account Manager, Gobona",
-            img: "../assets/images/Star.svg",
+            img: {starImg},
         },
     ]);
 

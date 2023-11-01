@@ -11,7 +11,7 @@ const OurTeamSection = () => {
         {
             title: 'Kristine Palmer',
             text:"Chef Operation Officer",
-            img: '../assets/images/Kristine-Palmer.png',
+            img: {img_KristinePalmer},
             altText: "Kristine Palmer, team",
             type: "active-team",
             typeTwo: "active-img"
@@ -19,7 +19,7 @@ const OurTeamSection = () => {
         {
             title: 'Mark Aubri',
             text:"Senior Consultant",
-            img: '../assets/images/Mark-Aubri.png',
+            img: {img_MarkAubri},
             altText: "Mark Aubri, team",
             type: "active-team2",
             typeTwo: "active-img2"
@@ -27,7 +27,7 @@ const OurTeamSection = () => {
         {
             title: 'Kimberly Hansen',
             text:"Senior Consultant",
-            img: '../assets/images/Kimberly-Hansen.png',
+            img: {img_KimberlyHansen},
             altText: "Kimberly Hansen, team",
             type: "",
             typeTwo: ""
@@ -35,7 +35,7 @@ const OurTeamSection = () => {
         {
             title: 'Justin Willoman',
             text:"Senior Tech Consultant",
-            img: '../assets/images/Justin-Willoman.png',
+            img: {img_JustinWilloman},
             altText: "Justin Willoman, team",
             type: "",
             typeTwo: ""
