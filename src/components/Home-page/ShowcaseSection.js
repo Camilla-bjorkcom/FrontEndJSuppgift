@@ -1,8 +1,8 @@
 import React from 'react'
-import img_showcase_lines from '../assets/images/showcase-lines.png'
-import img_showcaseimg from '../assets/images/showcase-image.svg'
-import ButtonYellow from './Generics/ButtonYellow'
-import ButtonOutlinedark from './Generics/ButtonOutlinedark'
+import img_showcase_lines from '../../assets/images/showcase-lines.png'
+import img_showcaseimg from '../../assets/images/showcase-image.svg'
+import ButtonYellow from '../Generics/ButtonYellow'
+import ButtonOutlinedark from '../Generics/ButtonOutlinedark'
 
 
 const ShowcaseSection = () => {

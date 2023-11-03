@@ -130,9 +130,6 @@
   background-color: #191919;
   color: #DAD9D3;
 }
-.about-company .container .section-title {
-  text-align: center;
-}
 .about-company .container .section-title h2 {
   max-width: 80%;
 }
@@ -145,6 +142,7 @@
 .about-company .container .section-title p {
   max-width: 80%;
   opacity: 70%;
+  text-align: left;
 }
 @media (min-width: 1400px) {
   .about-company .container .section-title p {

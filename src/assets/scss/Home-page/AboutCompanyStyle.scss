@@ -136,7 +136,7 @@
 
         .section-title {
            
-            text-align: center;
+            // text-align: center;
             h2 {
                 max-width: 80%;
                 @media (min-width: 1400px) {
@@ -149,6 +149,7 @@
             p {
                 max-width: 80%;
                 opacity: 70%;
+                text-align: left;
 
                 @media (min-width: 1400px) {
 

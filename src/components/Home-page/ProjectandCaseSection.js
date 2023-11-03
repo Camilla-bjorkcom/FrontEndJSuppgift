@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import ButtonDark from './Generics/ButtonDark'
+import ButtonDark from '../Generics/ButtonDark'
 import ProjectandCaseArticle from './ProjectandCaseArticle'
+import SectionTitle from '../Generics/SectionTitle'
 
 const ProjectandCaseSection = () => {
 
@@ -27,13 +28,12 @@ const ProjectandCaseSection = () => {
         <section className="projectandcase">
             <div className="container">
                 <div className="section-title">
-                    <div className="title">Project & Case Studies</div>
-                    <h2>Let's Looks Our Global Projects</h2>
+                    <SectionTitle title="Project & Case Studies" subtitle="Let's Looks Our Global Projects"/>
                 </div>
                 <div className="projects" >
                 {
                     articles.map(article => (
-                        <ProjectandCaseArticle key={article.id} title={article.title} imageUrl={article.imageUrl} />
+                        <ProjectandCaseArticle key={article.id} title={article.title} imageUrl={article.imageUrl} altText={article.altText} />
                     ))
                 }
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const OurTeamMembers = ({ altText, type, typeTwo, title, text, img }) => {
+const OurTeamMembers = ({ altText, type, typeTwo, title, text, imgUrl }) => {
 
     const getTeamId = () => {
         switch (type) {
@@ -28,8 +28,8 @@ const OurTeamMembers = ({ altText, type, typeTwo, title, text, img }) => {
     }
 
     return (
-        <div className="team-intro" id={getTeamId}>
-            <img src={img} id={getImgId} alt={altText} />
+        <div className="team-intro" id={getTeamId()}>
+            <img src={imgUrl} id={getImgId()} alt={altText} />
             <h3>{title}</h3>
             <p>{text}</p>
         </div>
@@ -37,5 +37,3 @@ const OurTeamMembers = ({ altText, type, typeTwo, title, text, img }) => {
 }
 
 export default OurTeamMembers
-
-// `${active ? 'active-team' : ''}`

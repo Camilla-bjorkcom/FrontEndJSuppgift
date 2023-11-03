@@ -69,6 +69,7 @@
 
                 @media (min-width:1600px) {
                     align-items: start;
+                    text-align: left;
                 }
 
                 p {
@@ -79,10 +80,19 @@
                     position: relative;
                     width: fit-content;
 
-                    .img-news {
-                        display: none;
-                        margin: auto;
+                    .date {
+                        background-color: #F0D082;
+                        padding: 10px 15px 10px 15px;
+                        font-weight: bolder;
+                        font-size: 15px;
+                    }
 
+                    .img-news { 
+                        display: none;
+                        margin: auto; 
+                        width: 100%;
+                        aspect-ratio: 3/2 ;
+                       
                         @media (min-width: 576px) {
                             display: block;
                         }

@@ -1,8 +1,9 @@
 import React from 'react'
-import img_founder_CEO from '../assets/images/founder_CEO.jpg'
-import ButtonDark from './Generics/ButtonDark'
-import ButtonRound from './Generics/ButtonRound'
+import img_founder_CEO from '../../assets/images/founder_CEO.jpg'
+import ButtonDark from '../Generics/ButtonDark'
+import ButtonRound from '../Generics/ButtonRound'
 import { Link } from 'react-router-dom';
+import SectionTitle from '../Generics/SectionTitle';
 
 const AboutCompanySection = () => {
   return (
@@ -17,8 +18,7 @@ const AboutCompanySection = () => {
             </div>
         </div>
         <div className="section-title right">
-            <div className="title">About Company</div>
-            <h2>We Are Business Consulting & Credit Repair Experts</h2>
+            <SectionTitle title="About Company" subtitle="We Are Business Consulting & Credit Repair Experts"/>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse
                 obcaecati? Ex esse error voluptates iure vel totam eos.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci

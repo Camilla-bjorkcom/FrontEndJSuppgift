@@ -68,6 +68,7 @@
 @media (min-width: 1600px) {
   .article-news .container .show-articles .article {
     align-items: start;
+    text-align: left;
   }
 }
 .article-news .container .show-articles .article p {
@@ -78,9 +79,17 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+.article-news .container .show-articles .article .img-and-date .date {
+  background-color: #F0D082;
+  padding: 10px 15px 10px 15px;
+  font-weight: bolder;
+  font-size: 15px;
+}
 .article-news .container .show-articles .article .img-and-date .img-news {
   display: none;
   margin: auto;
+  width: 100%;
+  aspect-ratio: 3/2;
 }
 @media (min-width: 576px) {
   .article-news .container .show-articles .article .img-and-date .img-news {

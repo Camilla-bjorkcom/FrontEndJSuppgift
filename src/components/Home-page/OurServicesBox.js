@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonRound from './Generics/ButtonRound'
+import ButtonRound from '../Generics/ButtonRound'
 
 const OurServicesBox = ({ title, description, url, active }) => {
 
@@ -14,14 +14,3 @@ const OurServicesBox = ({ title, description, url, active }) => {
 }
 
 export default OurServicesBox
-
-
-
-// const getBoxClassName = () => {
-    //     switch (type) {
-    //         case 'active-box':
-    //             return 'active-box box'
-    //         default:
-    //             return 'box'
-    //             break;
-    //     }

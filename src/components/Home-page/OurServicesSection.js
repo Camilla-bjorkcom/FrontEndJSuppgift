@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import ButtonOutlinedark from './Generics/ButtonOutlinedark'
+import ButtonOutlinedark from '../Generics/ButtonOutlinedark'
 import OurServicesBox from './OurServicesBox'
-import img_background_lines from '../assets/images/Rectangle 607.svg'
-import SectionTitle from './Generics/SectionTitle'
+import img_background_lines from '../../assets/images/Rectangle 607.svg'
+import SectionTitle from '../Generics/SectionTitle'
 
 const OurServicesSection = () => {
-
 
     const [services, setServices] = useState([
         {
@@ -32,7 +31,7 @@ const OurServicesSection = () => {
             url: '/services/riskmanagement',
             active: false
         },
-        
+
     ])
 
 
@@ -40,8 +39,10 @@ const OurServicesSection = () => {
         <section className="our-services">
             <img src={img_background_lines} className="background-lines-right" alt="background-lines" />
             <div className="container">
-                <SectionTitle title="Our Services" subtitle="We Provide The Best 
+                <div className="section-title">
+                    <SectionTitle title="Our Services" subtitle="We Provide The Best 
      Service For Consulting"/>
+                </div>
                 <div className="boxes">
                     {
                         services.map(service => (
@@ -50,8 +51,8 @@ const OurServicesSection = () => {
                     }
                 </div>
                 <div className="btn-parent">
-                        <ButtonOutlinedark text="Browse Services" url="#" />
-                    </div>
+                    <ButtonOutlinedark text="Browse Services" url="#" />
+                </div>
             </div>
         </section>
     )

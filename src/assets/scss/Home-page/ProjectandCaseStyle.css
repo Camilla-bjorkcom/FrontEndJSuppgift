@@ -7,6 +7,9 @@
 .projectandcase .container .section-title {
   text-align: center;
 }
+.projectandcase .container .section-title .title {
+  text-align: center;
+}
 .projectandcase .container .section-title h2 {
   font-size: 28px;
 }

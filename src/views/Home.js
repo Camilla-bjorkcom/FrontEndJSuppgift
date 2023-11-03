@@ -1,16 +1,17 @@
 import React from 'react'
-import Header from '../components/Header';
-import ShowcaseSection from '../components/ShowcaseSection'
-import BrandsSection from '../components/BrandsSection'
-import FeaturesSection from '../components/FeaturesSection'
-import AboutCompanySection from '../components/AboutCompanySection'
-import OurServicesSection from '../components/OurServicesSection'
-import WhyChooseUsSection from '../components/WhyChooseUsSection'
-import ProjectandCaseSection from '../components/ProjectandCaseSection'
-import OurTeamSection from '../components/OurTeamSection';
-import TestimonialSection from '../components/TestimonialSection';
-import ArticleNewsSection from '../components/ArticleNewsSection';
-import NewsletterSection from '../components/NewsletterSection';
+import Header from '../components/Generics/Header';
+import ShowcaseSection from '../components/Home-page/ShowcaseSection'
+import BrandsSection from '../components/Home-page/BrandsSection'
+import FeaturesSection from '../components/Home-page/FeaturesSection'
+import AboutCompanySection from '../components/Home-page/AboutCompanySection'
+import OurServicesSection from '../components/Home-page/OurServicesSection'
+import WhyChooseUsSection from '../components/Home-page/WhyChooseUsSection'
+import ProjectandCaseSection from '../components/Home-page/ProjectandCaseSection'
+import OurTeamSection from '../components/Home-page/OurTeamSection';
+import TestimonialSection from '../components/Home-page/TestimonialSection';
+import ArticleNewsSection from '../components/Home-page/ArticleNewsSection';
+import NewsletterSection from '../components/Home-page/NewsletterSection';
+import Footer from '../components/Generics/Footer';
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
         <ArticleNewsSection />
         <NewsletterSection />
       </main>
+      <Footer />
     </>
   )
 }

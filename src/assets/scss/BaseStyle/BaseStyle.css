@@ -12,6 +12,7 @@ body {
 .section-title {
   margin-top: 120px;
   margin-bottom: 90px;
+  text-align: left;
 }
 .section-title .title {
   color: #F94D1C;

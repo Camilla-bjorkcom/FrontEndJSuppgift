@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,900&family=Inter:wght@300;400;500;600;700&display=swap');
 
+
+//Home-page
 @import './BaseStyle/Buttons';
 @import './BaseStyle/BaseStyle';
 @import './BaseStyle/Header';
@@ -15,3 +17,6 @@
 @import './Home-page/ShowcaseStyle';
 @import './Home-page/TestimonialStyle';
 @import './Home-page/WhyChooseUsStyle';
+
+//Contact-page
+@import './Contact-page/ContactPageStyle';

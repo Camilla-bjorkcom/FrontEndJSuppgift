@@ -1,5 +1,6 @@
 import React from 'react';
-import img_chooseus_img from '../assets/images/chooseus-image.png'
+import img_chooseus_img from '../../assets/images/chooseus-image.png'
+import SectionTitle from '../Generics/SectionTitle'
 
 const WhyChooseUsSection = () => {
   return (
@@ -7,10 +8,10 @@ const WhyChooseUsSection = () => {
     <div className="container">
         <div className="left">
             <div className="section-title">
-                <p className="title">Why Choose Us</p>
-                <h2>Why We Are The Best Business Consulting Agency</h2>
+                <SectionTitle title="Why Choose Us" subtitle="Why We Are The Best Business Consulting Agency"/>
             </div>
             <div className="why">
+                {/* Valt att inte ha komponenter här, varje icon ska ha ett eget div-element enligt min design-uppbyggnad  */}
                 <div id="icon1" className="icon"><i className="fa-light fa-thumbs-up"></i></div>
                 <div id="icon2" className="icon"><i className="fa-light fa-gem"></i></div>
                 <div id="icon3" className="icon"><i className="fa-light fa-pen-field"></i></div>
@@ -33,11 +34,9 @@ const WhyChooseUsSection = () => {
                 </div>
             </div>
         </div>
-
         <div className="right">
             <img className="chooseus-image" src={img_chooseus_img} alt="office talk between two women, discussing work at a desk" />
         </div>
-
     </div>
     <div className="background-box">
     </div>
