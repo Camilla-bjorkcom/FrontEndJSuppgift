@@ -143,8 +143,21 @@
         }
 
         .form-wrapper {
-
+            
             #form {
+                text-align: center;
+
+                .errorMessage {
+                    text-align: center;
+                    margin-bottom: 30px;
+                    color: red;
+                }
+
+                .returnMessage {
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
                 label {
                     display: block;
                     padding: 5px 0;

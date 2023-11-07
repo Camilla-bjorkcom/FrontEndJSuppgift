@@ -1817,59 +1817,42 @@ footer .container .lower-pt .flex .social-media a:hover {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .contact-info .container .flex-box {
     flex-direction: row;
   }
 }
 .contact-info .container .flex-box .contact-box {
   border: 1px solid rgb(156, 156, 156);
-  width: 70vw;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 30px 0;
+  aspect-ratio: auto;
+  padding: 30px 30px;
   display: grid;
-  grid-template-columns: auto fit-content;
-  grid-template-rows: auto fit-content;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: "icon headline" "icon information";
   align-items: start;
   position: relative;
-  gap: 10px;
-  margin: 0 auto;
-}
-@media (min-width: 576px) {
-  .contact-info .container .flex-box .contact-box {
-    padding: 50px;
-  }
-}
-@media (min-width: 768px) {
-  .contact-info .container .flex-box .contact-box {
-    -moz-column-gap: normal;
-         column-gap: normal;
-    width: 420px;
-    padding: 50px;
-  }
+  gap: 20px;
 }
 .contact-info .container .flex-box .contact-box .contact-icon {
   grid-area: icon;
   margin: 0;
   position: absolute;
-  right: 15px;
-  top: 3px;
+  left: 40px;
+  top: 15px;
   font-size: x-large;
-  display: none;
-}
-@media (min-width: 576px) {
-  .contact-info .container .flex-box .contact-box .contact-icon {
-    display: block;
-  }
+  display: block;
 }
 .contact-info .container .flex-box .contact-box .contact-headline {
   grid-area: headline;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 .contact-info .container .flex-box .contact-box .information {
   grid-area: information;
   margin: 0;
+  width: 70%;
+  margin: auto;
 }
 
 .contact-form {
@@ -1891,6 +1874,18 @@ footer .container .lower-pt .flex .social-media a:hover {
 }
 .contact-form .container .section-title {
   margin-bottom: 50px;
+}
+.contact-form .container .form-wrapper #form {
+  text-align: center;
+}
+.contact-form .container .form-wrapper #form .errorMessage {
+  text-align: center;
+  margin-bottom: 30px;
+  color: red;
+}
+.contact-form .container .form-wrapper #form .returnMessage {
+  text-align: center;
+  margin-bottom: 30px;
 }
 .contact-form .container .form-wrapper #form label {
   display: block;
