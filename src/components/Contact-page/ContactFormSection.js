@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ContactFormSection = () => {
   return (
@@ -28,7 +29,7 @@ const ContactFormSection = () => {
                             <textarea name="message" id="message" placeholder="Your Message*" className="form-input p-2" tabindex="3" ></textarea>
                         </div>
 
-                        <a href="#"><button className="btn-yellow btn btn-warning form-input" type="button">Send Message<i className="fa-regular fa-arrow-up-right"></i></button></a>
+                        <Link to="#"><button className="btn-yellow btn btn-warning form-input" type="button">Send Message<i className="fa-regular fa-arrow-up-right"></i></button></Link>
                     </form>
                 </div>
             </div>

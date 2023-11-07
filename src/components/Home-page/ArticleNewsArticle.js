@@ -1,6 +1,8 @@
 import React from 'react'
 
 const ArticleNewsArticle = ({ imageUrl, altText, title, content, category, published}) => {
+    
+    
     function formatDate(dateString){
         return new Date(dateString).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
     }
