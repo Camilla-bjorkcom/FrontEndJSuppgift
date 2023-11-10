@@ -160,6 +160,16 @@ body {
   }
 }
 
+nav {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .pagination li a {
+  color: #191919;
+}
+
 .informative-text h3 {
   font-family: "DM sans", "sans-serif";
   font-size: 22px;
@@ -1944,10 +1954,6 @@ footer .container .lower-pt .flex .social-media a:hover {
   display: flex;
   justify-content: center;
 }
-.newsandarticle .wrapper .container .headline a {
-  text-decoration: none;
-  color: #191919;
-}
 .newsandarticle .wrapper .container .headline p {
   margin-top: 20px;
   margin-bottom: 25px;
@@ -1997,6 +2003,10 @@ footer .container .lower-pt .flex .social-media a:hover {
     align-items: start;
     text-align: left;
   }
+}
+.newsandarticle .show-articles .article a {
+  text-decoration: none;
+  color: #191919;
 }
 .newsandarticle .show-articles .article p {
   margin-top: 15px;

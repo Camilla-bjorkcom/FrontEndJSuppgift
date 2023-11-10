@@ -39,6 +39,21 @@ body {
 
     }
 }
+nav {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+.pagination {
+    li {
+        a {
+            color: #191919;
+        }
+       
+    }
+}
+}
 
 
 .informative-text {

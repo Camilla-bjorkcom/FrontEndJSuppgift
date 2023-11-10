@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import ButtonYellow from '../Generics/ButtonYellow'
-import { ErrorMessage, useFormik, yupToFormErrors } from 'formik'
+import { useFormik } from 'formik'
 import * as Yup from 'yup'
+import { Link } from 'react-router-dom'
 
 
 const FormComponent = () => {
@@ -93,7 +94,7 @@ const displayMessage = () => {
                 </div>
 
                 {/* <ButtonYellow text="Send Message" url="#"/> */}
-                <a href="#"><button className="btn-yellow btn btn-warning form-input" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button></a>
+                <Link to="#"><button className="btn-yellow btn btn-warning form-input" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button></Link>
             </form>
         </div>
     )
