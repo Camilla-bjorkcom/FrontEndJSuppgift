@@ -1766,42 +1766,42 @@ footer .container .lower-pt .flex .social-media a:hover {
   }
 }
 
-.connect {
+.wrapper {
   padding: 100px 30px;
   background-color: #F0EFE9;
   position: relative;
   z-index: 0;
 }
-.connect .background-lines {
+.wrapper .background-lines {
   max-width: 100vw;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
-.connect .container {
+.wrapper .container {
   display: flex;
   justify-content: center;
 }
-.connect .container .headline p {
+.wrapper .container .headline p {
   margin-top: 20px;
   margin-bottom: 25px;
   font-size: 20px;
   opacity: 70%;
   text-align: center;
 }
-.connect .container .headline h1 {
+.wrapper .container .headline h1 {
   font-family: "DM sans", "sans-serif";
   font-size: 30px;
   text-align: center;
 }
 @media (min-width: 576px) {
-  .connect .container .headline h1 {
+  .wrapper .container .headline h1 {
     font-size: 50px;
   }
 }
 @media (min-width: 1400px) {
-  .connect .container .headline h1 {
+  .wrapper .container .headline h1 {
     text-align: left;
     font-size: 56px;
   }
@@ -1886,11 +1886,14 @@ footer .container .lower-pt .flex .social-media a:hover {
 .contact-form .container .form-wrapper #form .returnMessage {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 1.5em;
+  background-color: #F9D783;
+  padding: 7px;
 }
 .contact-form .container .form-wrapper #form label {
-  display: block;
-  padding: 5px 0;
-  margin: 0 auto;
+  display: inline-block;
+  margin: 0px auto;
+  color: red;
 }
 .contact-form .container .form-wrapper #form .form-input {
   width: 80%;
@@ -1904,6 +1907,9 @@ footer .container .lower-pt .flex .social-media a:hover {
 .contact-form .container .form-wrapper #form textarea {
   resize: none;
   height: 150px;
+}
+.contact-form .container .form-wrapper #form a {
+  text-decoration: none;
 }
 .contact-form .container .form-wrapper #form .btn-yellow {
   margin-top: 40px;
@@ -1919,4 +1925,112 @@ footer .container .lower-pt .flex .social-media a:hover {
 }
 .map .google-map iframe {
   width: 100vw;
+}
+
+.newsandarticle .wrapper {
+  padding: 100px 30px;
+  background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.newsandarticle .wrapper .background-lines {
+  max-width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.newsandarticle .wrapper .container {
+  display: flex;
+  justify-content: center;
+}
+.newsandarticle .wrapper .container .headline a {
+  text-decoration: none;
+  color: #191919;
+}
+.newsandarticle .wrapper .container .headline p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  opacity: 70%;
+  text-align: center;
+}
+.newsandarticle .wrapper .container .headline h1 {
+  font-family: "DM sans", "sans-serif";
+  font-size: 30px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .newsandarticle .wrapper .container .headline h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .newsandarticle .wrapper .container .headline h1 {
+    text-align: left;
+    font-size: 56px;
+  }
+}
+.newsandarticle .show-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 70px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+@media (min-width: 1600px) {
+  .newsandarticle .show-articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.newsandarticle .show-articles .article {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .newsandarticle .show-articles .article {
+    align-items: start;
+    text-align: left;
+  }
+}
+.newsandarticle .show-articles .article p {
+  margin-top: 15px;
+}
+.newsandarticle .show-articles .article .img-and-date {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.newsandarticle .show-articles .article .img-and-date .date {
+  background-color: #F0D082;
+  padding: 10px 15px 10px 15px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.newsandarticle .show-articles .article .img-and-date .img-news {
+  display: none;
+  margin: auto;
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+@media (min-width: 576px) {
+  .newsandarticle .show-articles .article .img-and-date .img-news {
+    display: block;
+  }
+}
+.newsandarticle .show-articles .article .img-and-date .date {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  display: none;
+}
+@media (min-width: 576px) {
+  .newsandarticle .show-articles .article .img-and-date .date {
+    display: block;
+  }
 }

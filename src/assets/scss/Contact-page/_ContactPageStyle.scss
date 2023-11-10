@@ -1,6 +1,6 @@
 
 //CONTACT-PAGE
-.connect {
+.wrapper {
     padding: 100px 30px;
     background-color: #F0EFE9;
 
@@ -156,12 +156,16 @@
                 .returnMessage {
                     text-align: center;
                     margin-bottom: 30px;
+                    font-size: 1.5em;
+                    background-color:#F9D783;
+                    padding: 7px;
+
                 }
 
                 label {
-                    display: block;
-                    padding: 5px 0;
-                    margin: 0 auto;
+                    display: inline-block;
+                    margin: 0px auto;
+                    color: red;
                 }
 
                 .form-input {
@@ -177,6 +181,10 @@
                 textarea {
                     resize: none;
                     height: 150px;
+                }
+                
+                a {
+                    text-decoration: none;
                 }
 
                 .btn-yellow {

@@ -1,8 +1,17 @@
 import React from 'react'
+import Header from '../components/Generics/Header'
+import NewsSection from '../components/News-page/NewsSection'
+import NewsAndArticleSection from '../components/News-page/NewsAndArticleSection'
 
 const News = () => {
   return (
-    <div>News</div>
+    <>
+    <Header />
+    <main>
+      <NewsSection />
+      <NewsAndArticleSection />
+    </main>
+    </>
   )
 }
 

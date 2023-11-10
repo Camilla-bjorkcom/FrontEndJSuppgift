@@ -14,7 +14,6 @@ const Contact = () => {
     <ConnectSection />
     <ContactinfoSection />
     <ContactFormSection />
-  
     </main>
     <Footer />
     </>

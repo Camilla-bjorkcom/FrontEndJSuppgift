@@ -19,11 +19,13 @@ const FormComponent = () => {
 
         validationSchema: Yup.object( {
             name: Yup.string()
-            .required("Förnamn måste anges")
-            .min(2, "Förnamnet måste bestå av minst 2 tecken"),
+            .required("Name is required")
+            .min(2, "Must contain atleast two letters"),
             email: Yup.string()
-            .required("E-postadress måste anges")
-            .matches(emailRegex, "E-postadressen måste vara giltig"),
+            .required("Email is required")
+            .matches(emailRegex, "The email must be valid"),
+            message: Yup.string()
+            .required("Enter a message")
         }),
 
         onSubmit: async (values) => {
@@ -35,10 +37,13 @@ const FormComponent = () => {
                 body: JSON.stringify(values)
             })
 
+            console.log(values)
+
             switch (result.status) {
                 case 200:
-                    clearForm();
-                    setReturnMessage('Formuläret har skickats');
+                    displayMessage();
+                    form.resetForm();
+                    setReturnMessage('Contact form has been received');
                     break;
                 case 400:
                     setErrorMessage(`något har gått fel. Felmeddelandet är: ${await result.text()}`)
@@ -52,38 +57,43 @@ const FormComponent = () => {
     })
 
 
-    const clearForm = () => {
-        setName('');
-        setEmail('');
-        setMessage('');
-    }
 
+const displayMessage = () => {
+    // return active(true);
+}
+
+    // const clearForm = () => {
+    //     setName('');
+    //     setEmail('');
+    //     setMessage('');
+    // }
+    // ${active ? '' : 'd-none'}
     return (
         <div className="form-wrapper">
             <form id="form" onSubmit={form.handleSubmit} noValidate>
                 <p className="errorMessage">{errorMessage}</p>
-                <p className="returnMessage">{returnMessage}</p>
+                <p className={`returnMessage `}>{returnMessage}</p>
 
                 <div className="mb-3">
-                    <label for="name">
+                    <label htmlFor="name">
                     {form.errors.name && form.touched.name ? form.errors.name: ''}</label>
-                    <input id="name" type="text" name="name" placeholder="Name*" className="form-input p-2" tabindex="1" value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur} />
+                    <input id="name" type="text" name="name" placeholder="Name*" className="form-input p-2" tabIndex="1" value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur} />
                 </div>
 
                 <div className="mb-3">
-                    <label for="email">{form.errors.email && form.touched.email ? form.errors.email: ''}
+                    <label htmlFor="email">{form.errors.email && form.touched.email ? form.errors.email: ''}
                     </label>
-                    <input id="email" type="email" name="email" placeholder="Email*" className="form-input p-2" tabindex="2" value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur} />
+                    <input id="email" type="email" name="email" placeholder="Email*" className="form-input p-2" tabIndex="2" value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur} />
                 </div>
 
                 <div className="mb-3">
-                    <label for="message">{form.errors.message && form.touched.message ? form.errors.message: ''}
+                    <label htmlFor="message">{form.errors.message && form.touched.message ? form.errors.message: ''}
                     </label>
-                    <textarea name="message" id="message" placeholder="Your Message*" className="form-input p-2" tabindex="3" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur} ></textarea>
+                    <textarea name="message" id="message" placeholder="Your Message*" className="form-input p-2" tabIndex="3" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur} ></textarea>
                 </div>
 
                 {/* <ButtonYellow text="Send Message" url="#"/> */}
-                <a href="#"><button class="btn-yellow btn btn-warning form-input" type="submit">Send Message<i class="fa-regular fa-arrow-up-right"></i></button></a>
+                <a href="#"><button className="btn-yellow btn btn-warning form-input" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button></a>
             </form>
         </div>
     )

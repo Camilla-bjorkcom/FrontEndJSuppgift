@@ -1,0 +1,116 @@
+//News-PAGE
+.newsandarticle {
+    .wrapper {
+        padding: 100px 30px;
+        background-color: #F0EFE9;
+
+        position: relative;
+        z-index: 0;
+
+        .background-lines {
+            max-width: 100vw;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            .headline {
+                a {
+                    text-decoration: none;
+                    color: #191919;
+                }
+
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                    opacity: 70%;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-family: 'DM sans', 'sans-serif';
+                    font-size: 30px;
+                    text-align: center;
+
+                    @media (min-width:576px) {
+                        font-size: 50px;
+                    }
+
+                    @media (min-width: 1400px) {
+                        text-align: left;
+                        font-size: 56px;
+                    }
+                }
+            }
+        }
+    }
+
+    .show-articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 70px;
+        width: fit-content;
+        margin: auto;
+
+        @media (min-width: 1600px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .article {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            @media (min-width:1600px) {
+                align-items: start;
+                text-align: left;
+            }
+
+            p {
+                margin-top: 15px;
+            }
+
+            .img-and-date {
+                position: relative;
+                width: fit-content;
+
+                .date {
+                    background-color: #F0D082;
+                    padding: 10px 15px 10px 15px;
+                    font-weight: bolder;
+                    font-size: 15px;
+                }
+
+                .img-news {
+                    display: none;
+                    margin: auto;
+                    width: 100%;
+                    aspect-ratio: 3/2;
+
+                    @media (min-width: 576px) {
+                        display: block;
+                    }
+                }
+
+                .date {
+                    position: absolute;
+                    left: 15px;
+                    top: 15px;
+                    display: none;
+
+                    @media (min-width: 576px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
