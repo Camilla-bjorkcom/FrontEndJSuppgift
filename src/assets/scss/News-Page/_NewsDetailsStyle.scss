@@ -8,6 +8,8 @@
 
     .container {
         .headline {
+            grid-area: headline;
+            
             h2 {
                 font-family: 'DM sans', 'Sans Serif';
                 font-size: 28px;
@@ -30,14 +32,21 @@
                 }
             }
         }
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "headline headline"
+        "newstext aside";
 
         .newstext {
+            grid-area: newstext;
             img {
                 width: 50%;
             }
         }
         
         .aside {
+            grid-area: aside;
 
         form {
             input {
@@ -46,8 +55,14 @@
             }
         }
 
-        .categories {
+        .recentposts {
+            border: 1px solid black;
+            
+        }
 
+        .categories {
+            border: 1px solid black;
+            
         }
     }
     }
