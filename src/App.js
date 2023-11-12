@@ -17,12 +17,8 @@ function App() {
       <Route path='/news/:id' element={<NewsDetails />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
-
   );
 }
 
-<div className="wrapper">
-
-</div>
 
 export default App;

@@ -7,19 +7,19 @@ import Pagination from '../Generics/Pagination';
 const NewsAndArticleSection = () => {
 
 
-    const [articleshere, setArticleshere] = useState([]);
+    const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        getArticleshere();
+        getArticles();
 
     }
         , [])
 
-    const getArticleshere = async () => {
+    const getArticles = async () => {
         try {
             const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles`);
             const data = await result.json();
-            setArticleshere(data);
+            setArticles(data);
         }
         catch (error) {
             console.error(error);
@@ -36,8 +36,8 @@ const NewsAndArticleSection = () => {
 
                 <div className='show-articles informative-text'>
                     {
-                        articleshere.map(articlehere => (
-                            <Articles key={articlehere.id} id={articlehere.id} published={articlehere.published} category={articlehere.category} title={articlehere.title} altText={articlehere.altText} imageUrl={articlehere.imageUrl} content={articlehere.content} />
+                        articles.map(article => (
+                            <Articles key={article.id} id={article.id} published={article.published} category={article.category} title={article.title} altText={article.altText} imageUrl={article.imageUrl} content={article.content} />
                         ))
                     }
                 </div>

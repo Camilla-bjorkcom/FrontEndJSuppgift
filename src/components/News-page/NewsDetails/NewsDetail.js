@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Headline from './Headline'
+import NewsText from './NewsText'
 
 const NewsDetail = () => {
 const [news, setNews] = useState(null)
@@ -26,15 +28,16 @@ const [news, setNews] = useState(null)
     }
 
   return news ? (
-    <div className='container'>
-    <div>{news.id}</div>
-    <div>{news.title}</div>
-    <div>{news.content}</div>
-    <div>{news.author}</div>
-    <div>{news.published}</div>
-    <div>{news.category}</div>
-    <div><img src={news.imageUrl}/></div>
+    <section className='news-details'>
+      <div className='container'>
+        <Headline title={news.title} category={news.category} author={news.author} published={news.published}/>
+        
+        <NewsText imageUrl={news.imageUrl} text={news.content}/>
+    
     </div>
+   
+
+    </section>
   )
   :
   (
