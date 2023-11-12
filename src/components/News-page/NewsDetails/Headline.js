@@ -7,7 +7,6 @@ const Headline = ({title, published, category, author}) => {
     function formatDate(dateString){
         return new Date(dateString).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', })
     }
-
     const formattedDate = formatDate(published.split(' '));
 
 

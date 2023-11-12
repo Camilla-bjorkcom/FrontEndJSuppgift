@@ -2075,7 +2075,13 @@ footer .container .lower-pt .flex .social-media a:hover {
   border-radius: 50px;
   color: #F0D082;
 }
-
+.news-details .container .newstext img {
+  width: 50%;
+}
+.news-details .container .aside form input {
+  border-radius: 25px;
+  background-color: #dbdbdb;
+}
 .article-news {
   background-color: #F0EFE9;
   padding: 0px;
