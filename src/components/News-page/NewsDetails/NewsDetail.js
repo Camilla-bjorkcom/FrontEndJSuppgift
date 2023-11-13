@@ -3,36 +3,23 @@ import { useParams } from 'react-router-dom'
 import Headline from './Headline'
 import NewsText from './NewsText'
 import Aside from './Aside'
+import { useArticles } from '../../../Contexts/ArticleContext'
 
 const NewsDetail = () => {
-  const [news, setNews] = useState(null)
-  const { id } = useParams()
+
+  const { article, getArticle } = useArticles();
+  const { id } = useParams();
+
 
   useEffect(() => {
-    getNews()
+    getArticle(id)
   }, [])
 
-  const getNews = async () => {
-
-    try {
-      if (id !== undefined) {
-        const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
-
-
-        if (result.status === 200)
-          setNews(await result.json());
-      }
-    }
-    catch (error) {
-      console.error(error);
-    }
-  }
-
-  return news ? (
+  return article ? (
     <section className='news-details'>
       <div className='container'>
-        <Headline title={news.title} category={news.category} author={news.author} published={news.published} />
-        <NewsText imageUrl={news.imageUrl} text={news.content} />
+        <Headline title={article.title} category={article.category} author={article.author} published={article.published} />
+        <NewsText imageUrl={article.imageUrl} text={article.content} />
         <Aside />
       </div>
     </section>
@@ -41,6 +28,7 @@ const NewsDetail = () => {
     (
       <div>No article found</div>
     )
+
 }
 
 export default NewsDetail

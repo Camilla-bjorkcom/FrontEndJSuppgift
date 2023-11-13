@@ -2,30 +2,12 @@ import React, { useState, useEffect } from 'react'
 import SectionTitle from '../Generics/SectionTitle'
 import Articles from './Articles';
 import Pagination from '../Generics/Pagination';
+import { useArticles } from '../../Contexts/ArticleContext';
 
 
 const NewsAndArticleSection = () => {
 
-
-    const [articles, setArticles] = useState([]);
-
-    useEffect(() => {
-        getArticles();
-
-    }
-        , [])
-
-    const getArticles = async () => {
-        try {
-            const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles`);
-            const data = await result.json();
-            setArticles(data);
-        }
-        catch (error) {
-            console.error(error);
-        }
-    }
-
+    const { articles } = useArticles();
 
     return (
         <section className='newsandarticle'>

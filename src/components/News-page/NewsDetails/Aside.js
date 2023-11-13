@@ -1,34 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import Recentpost from './Recentpost'
 import Categories from './Categories'
-
+import { useArticles } from '../../../Contexts/ArticleContext';
 
 
 
 const Aside = () => {
-    const [news, setNews] = useState([])
+    
+  const { news, getNews } = useArticles();
 
     useEffect(() => {
         getNews()
     }, [])
-
-    const getNews = async () => {
-        try {
-
-            const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles`);
-
-            if (result.status === 200) {
-                const data = await result.json();
-                setNews(data.slice(0, 4));
-            }
-
-        }
-
-        catch (error) {
-            console.error(error);
-        }
-    }
-
 
     return (
         <div className='aside'>
@@ -47,9 +30,6 @@ const Aside = () => {
             </div>
 
             <Categories />
-
-
-
 
         </div>
     )
