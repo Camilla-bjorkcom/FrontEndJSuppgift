@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Recentpost from './Recentpost'
 import Categories from './Categories'
 import { useArticles } from '../../../Contexts/ArticleContext';
+import img_search from '../../../assets/images/magnifying-glass-solid.svg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,21 +12,21 @@ const Aside = () => {
   const { news, getNews } = useArticles();
 
     useEffect(() => {
-        getNews()
+        getNews(true)
     }, [])
 
     return (
         <div className='aside'>
-            <form>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="type to search...." />
+            <form>             
+                <Link to="#"><img src={img_search}/></Link>
+                <input type="search" placeholder="type to search...." />
             </form>
 
             <div className='recentposts'>
-                <h3>Recent Posts</h3>
+                <h5>Recent Posts</h5>
                 {
-                    news.map(newss => (
-                        <Recentpost key={newss.id} title={newss.title} published={newss.published} />
+                    news.map(article => (
+                        <Recentpost key={article.id} id={article.id} title={article.title} published={article.published} />
                     ))
                 }
             </div>

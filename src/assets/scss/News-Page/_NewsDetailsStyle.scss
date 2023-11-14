@@ -7,8 +7,18 @@
     height: 100%;
 
     .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "headline headline"
+        "newstext aside";
+
+
         .headline {
             grid-area: headline;
+            width: 70%;
+            padding: 20px;
+            margin-bottom: 25px;
             
             h2 {
                 font-family: 'DM sans', 'Sans Serif';
@@ -23,25 +33,26 @@
             .info-details {
                 display: flex;
                 justify-content: space-between;
-                width: fit-content;
+                width: 50%;
 
                 .yellow-dot {
-                    font-size: 50px;
-                    border-radius: 50px;
+                    font-size: 16px;
                     color: #F0D082;
                 }
             }
         }
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-areas: 
-        "headline headline"
-        "newstext aside";
 
         .newstext {
             grid-area: newstext;
+            margin-bottom: 50px;
+
+
             img {
-                width: 50%;
+                width: 80%;
+            }
+            p, h5 {
+                margin-top: 30px;
+                width: 80%;
             }
         }
         
@@ -49,20 +60,66 @@
             grid-area: aside;
 
         form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            border: 1px solid black;
+            border-radius: 12px;
+            background-color: #ebeaea;
+
             input {
-                border-radius: 25px;
-                background-color: #dbdbdb;
+                border: none;
+                background-color: transparent;
+                margin: 0;
+                width: 100%;
+                padding: 7px 8px;
             }
+            ::placeholder {
+                color:#393939;
+            }
+
+            img {
+                width: 30px;
+                margin-left: 10px;
+            }
+
         }
 
         .recentposts {
+            padding: 25px;
             border: 1px solid black;
+            margin: 30px 0px;
+
+            h5 {
+                font-weight: bolder;
+            }
             
+            
+            .posts {
+                padding: 10px;
+
+                a {
+                text-decoration: none;
+                color: #191919;}
+
+                h6 {
+                    font-weight: bolder;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
         }
 
         .categories {
+            padding: 25px;
             border: 1px solid black;
+            margin: 30px 0px;
             
+            h6 {
+                font-weight: bolder;
+            }
         }
     }
     }

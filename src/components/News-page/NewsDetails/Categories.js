@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Categories = () => {
+
+  
   return (
     <div className='categories'>
         <div><h6>Företag</h6> <p>- 20 posts</p> </div>

@@ -2,28 +2,19 @@ import React, { useState, useEffect } from 'react'
 import SectionTitle from '../Generics/SectionTitle'
 import { Link } from 'react-router-dom'
 import ArticleNewsArticle from './ArticleNewsArticle';
+import { useArticles } from '../../Contexts/ArticleContext';
 
 
 const ArticleNewsSection = () => {
 
-    const [articles, setArticles] = useState([]);
+   const { newsThree, getNews } = useArticles();
 
     useEffect(() => {
-        getArticles();
+        getNews(false);
     
         }
         , [])
 
-        const getArticles = async () => {
-            try {
-                const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles`);
-                const data = await result.json();
-                setArticles(data.slice(0,3));
-            }
-            catch (error) {
-                console.error(error);
-            }
-        }
 
   return (
      <section className="article-news">
@@ -39,7 +30,7 @@ const ArticleNewsSection = () => {
         <div className="show-articles informative-text">
 
         {
-            articles.map(article => (
+            newsThree.map(article => (
                 <ArticleNewsArticle key={article.id} published={article.published} category={article.category} title={article.title} altText={article.altText} imageUrl={article.imageUrl} content={article.content}/>
             ))
         }

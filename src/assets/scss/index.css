@@ -2060,6 +2060,9 @@ footer .container .lower-pt .flex .social-media a:hover {
 }
 .news-details .container .headline {
   grid-area: headline;
+  width: 70%;
+  padding: 20px;
+  margin-bottom: 25px;
 }
 .news-details .container .headline h2 {
   font-family: "DM sans", "Sans Serif";
@@ -2075,32 +2078,80 @@ footer .container .lower-pt .flex .social-media a:hover {
 .news-details .container .headline .info-details {
   display: flex;
   justify-content: space-between;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 50%;
 }
 .news-details .container .headline .info-details .yellow-dot {
-  font-size: 50px;
-  border-radius: 50px;
+  font-size: 16px;
   color: #F0D082;
 }
 .news-details .container .newstext {
   grid-area: newstext;
+  margin-bottom: 50px;
 }
 .news-details .container .newstext img {
-  width: 50%;
+  width: 80%;
+}
+.news-details .container .newstext p, .news-details .container .newstext h5 {
+  margin-top: 30px;
+  width: 80%;
 }
 .news-details .container .aside {
   grid-area: aside;
 }
+.news-details .container .aside form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: #ebeaea;
+}
 .news-details .container .aside form input {
-  border-radius: 25px;
-  background-color: #dbdbdb;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  padding: 7px 8px;
+}
+.news-details .container .aside form ::-moz-placeholder {
+  color: #393939;
+}
+.news-details .container .aside form ::placeholder {
+  color: #393939;
+}
+.news-details .container .aside form img {
+  width: 30px;
+  margin-left: 10px;
 }
 .news-details .container .aside .recentposts {
+  padding: 25px;
   border: 1px solid black;
+  margin: 30px 0px;
+}
+.news-details .container .aside .recentposts h5 {
+  font-weight: bolder;
+}
+.news-details .container .aside .recentposts .posts {
+  padding: 10px;
+}
+.news-details .container .aside .recentposts .posts a {
+  text-decoration: none;
+  color: #191919;
+}
+.news-details .container .aside .recentposts .posts h6 {
+  font-weight: bolder;
+}
+.news-details .container .aside .recentposts .posts p {
+  font-size: 13px;
 }
 .news-details .container .aside .categories {
+  padding: 25px;
   border: 1px solid black;
+  margin: 30px 0px;
+}
+.news-details .container .aside .categories h6 {
+  font-weight: bolder;
 }
 
 .article-news {
