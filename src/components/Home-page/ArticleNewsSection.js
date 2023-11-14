@@ -31,7 +31,7 @@ const ArticleNewsSection = () => {
 
         {
             newsThree.map(article => (
-                <ArticleNewsArticle key={article.id} published={article.published} category={article.category} title={article.title} altText={article.altText} imageUrl={article.imageUrl} content={article.content}/>
+                <ArticleNewsArticle key={article.id} published={article.published} category={article.category} title={article.title} altText={article.altText} imageUrl={article.imageUrl} content={article.content} id={article.id}/>
             ))
         }
         </div>

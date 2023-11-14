@@ -37,20 +37,6 @@
                     aspect-ratio: 3/2 ;
                 }
 
-                h3 {
-                    font-family: 'DM sans', 'sans-serif';
-                    font-size: 16px;
-                    padding-top: 15px;
-                    padding-bottom: 8px;
-                    border-bottom: 1px solid #DAD9D3;
-
-                    @media (min-width:576px) {
-                        font-size: 22px;
-                        padding-top: 35px;
-                        padding-bottom: 16px;
-                    }
-                }
-
                 a {
                     display: block;
                     text-align: right;
@@ -60,10 +46,6 @@
                     color: #191919;
                     text-decoration: none;
 
-                    @media (min-width:576px) {
-                        padding: 15px;
-                    }
-
                     &:hover {
                         text-decoration: underline;
                     }
@@ -72,13 +54,28 @@
                         margin-left: 3px;
                     }
 
+
+                h3 {
+                    font-family: 'DM sans', 'sans-serif';
+                    font-size: 16px;
+                    padding-top: 15px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #DAD9D3;
+                    text-align: left;
+
+                    @media (min-width:576px) {
+                        font-size: 22px;
+                        padding-top: 20px;
+                        padding-bottom: 16px;
+                    }
                 }
+            }
             }
         }
 
         .btn-parent {
             .btn-dark {
-                margin-top: 50px;
+                margin: 100px 0;
 
                 @media (min-width:576px) {
                     width: 250px;

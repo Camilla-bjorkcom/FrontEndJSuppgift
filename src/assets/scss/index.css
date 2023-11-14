@@ -770,6 +770,10 @@ footer .container .lower-pt .flex .social-media a:hover {
   align-items: center;
   text-align: center;
 }
+.article-news .container .show-articles .article a {
+  text-decoration: none;
+  color: #191919;
+}
 @media (min-width: 1600px) {
   .article-news .container .show-articles .article {
     align-items: start;
@@ -1118,6 +1122,9 @@ footer .container .lower-pt .flex .social-media a:hover {
   padding: 40px;
   max-width: 70vw;
 }
+.our-services .container .boxes .box:hover {
+  background-color: #F9D783;
+}
 @media (min-width: 576px) {
   .our-services .container .boxes .box {
     max-width: 70%;
@@ -1176,9 +1183,6 @@ footer .container .lower-pt .flex .social-media a:hover {
 .our-services .container .boxes .box .active-btn:hover {
   background-color: #191919;
   color: #DAD9D3;
-}
-.our-services .container .boxes .active-box {
-  background-color: #F9D783;
 }
 .our-services .container .btn-parent {
   padding-bottom: 90px;
@@ -1330,20 +1334,6 @@ footer .container .lower-pt .flex .social-media a:hover {
   width: 100%;
   aspect-ratio: 3/2;
 }
-.projectandcase .container .projects article h3 {
-  font-family: "DM sans", "sans-serif";
-  font-size: 16px;
-  padding-top: 15px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #DAD9D3;
-}
-@media (min-width: 576px) {
-  .projectandcase .container .projects article h3 {
-    font-size: 22px;
-    padding-top: 35px;
-    padding-bottom: 16px;
-  }
-}
 .projectandcase .container .projects article a {
   display: block;
   text-align: right;
@@ -1353,19 +1343,29 @@ footer .container .lower-pt .flex .social-media a:hover {
   color: #191919;
   text-decoration: none;
 }
-@media (min-width: 576px) {
-  .projectandcase .container .projects article a {
-    padding: 15px;
-  }
-}
 .projectandcase .container .projects article a:hover {
   text-decoration: underline;
 }
 .projectandcase .container .projects article a i {
   margin-left: 3px;
 }
+.projectandcase .container .projects article a h3 {
+  font-family: "DM sans", "sans-serif";
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #DAD9D3;
+  text-align: left;
+}
+@media (min-width: 576px) {
+  .projectandcase .container .projects article a h3 {
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+}
 .projectandcase .container .btn-parent .btn-dark {
-  margin-top: 50px;
+  margin: 100px 0;
 }
 @media (min-width: 576px) {
   .projectandcase .container .btn-parent .btn-dark {
@@ -1835,34 +1835,30 @@ footer .container .lower-pt .flex .social-media a:hover {
 .contact-info .container .flex-box .contact-box {
   border: 1px solid rgb(156, 156, 156);
   aspect-ratio: auto;
-  padding: 30px 30px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "icon headline" "icon information";
-  align-items: start;
-  position: relative;
+  flex: 1;
+  padding: 70px 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+}
+.contact-info .container .flex-box .contact-box .first-row {
+  display: flex;
+  gap: 50px;
 }
 .contact-info .container .flex-box .contact-box .contact-icon {
   grid-area: icon;
   margin: 0;
-  position: absolute;
-  left: 40px;
-  top: 15px;
   font-size: x-large;
   display: block;
 }
 .contact-info .container .flex-box .contact-box .contact-headline {
-  grid-area: headline;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
+  width: 100%;
 }
 .contact-info .container .flex-box .contact-box .information {
-  grid-area: information;
-  margin: 0;
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  padding-left: 70px;
+  margin-bottom: 0;
 }
 
 .contact-form {
@@ -1897,7 +1893,6 @@ footer .container .lower-pt .flex .social-media a:hover {
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.5em;
-  background-color: #F9D783;
   padding: 7px;
 }
 .contact-form .container .form-wrapper #form label {
@@ -1923,6 +1918,35 @@ footer .container .lower-pt .flex .social-media a:hover {
 }
 .contact-form .container .form-wrapper #form .btn-yellow {
   margin-top: 40px;
+  background-color: #F9D783;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+@media (min-width: 576px) {
+  .contact-form .container .form-wrapper #form .btn-yellow {
+    width: 400px;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-form .container .form-wrapper #form .btn-yellow {
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+  }
+}
+.contact-form .container .form-wrapper #form .btn-yellow i {
+  margin-left: 10px;
+}
+.contact-form .container .form-wrapper #form .btn-yellow:hover {
+  background-color: #191919;
+  color: #DAD9D3;
 }
 
 .map {

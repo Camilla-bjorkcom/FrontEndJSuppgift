@@ -94,7 +94,7 @@ const displayMessage = () => {
                 </div>
 
                 {/* <ButtonYellow text="Send Message" url="#"/> */}
-                <Link to="#"><button className="btn-yellow btn btn-warning form-input" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button></Link>
+                <button className="btn-yellow btn btn-warning form-input" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
             </form>
         </div>
     )

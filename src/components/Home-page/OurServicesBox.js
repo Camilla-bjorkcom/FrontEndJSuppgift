@@ -1,10 +1,10 @@
 import React from 'react'
 import ButtonRound from '../Generics/ButtonRound'
 
-const OurServicesBox = ({ title, description, url, active }) => {
+const OurServicesBox = ({ title, description, url }) => {
 
     return (
-        <div className={`box ${active ? 'active-box' : ''}`}>
+        <div className={`box`}>
             <div className="line" alt="black-line"></div>
             <h3>{title}</h3>
             <p>{description}</p>

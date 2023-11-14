@@ -11,25 +11,21 @@ const OurServicesSection = () => {
             title: 'Buisness Advice',
             description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.',
             url: '/services/businessadvice',
-            active: false
         },
         {
             title: 'Startup Business',
             description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.',
             url: '/services/startupbusiness',
-            active: true
         },
         {
             title: 'Financial Advice',
             description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.',
             url: '/services/financialadvice',
-            active: false
         },
         {
             title: 'Risk Management',
             description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.',
             url: '/services/riskmanagement',
-            active: false
         },
 
     ])
@@ -46,7 +42,7 @@ const OurServicesSection = () => {
                 <div className="boxes">
                     {
                         services.map(service => (
-                            <OurServicesBox key={service.title} title={service.title} description={service.description} url={service.url} active={service.active} />
+                            <OurServicesBox key={service.title} title={service.title} description={service.description} url={service.url} />
                         ))
                     }
                 </div>

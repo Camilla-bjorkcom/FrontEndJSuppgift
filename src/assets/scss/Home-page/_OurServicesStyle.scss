@@ -58,6 +58,10 @@
                 position: relative;
                 padding: 40px;
                 max-width: 70vw;
+                
+                &:hover {
+                    background-color: #F9D783;
+                }
 
                 @media (min-width: 576px) {
                     max-width: 70%;
@@ -121,9 +125,7 @@
                 }
 
             }
-            .active-box {
-                background-color: #F9D783;
-            }
+        
         }
 
         .btn-parent {
