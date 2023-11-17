@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import Headline from './Headline'
 import NewsText from './NewsText'
 import Aside from './Aside'
@@ -9,11 +9,13 @@ const NewsDetail = () => {
 
   const { article, getArticle } = useArticles();
   const { id } = useParams();
+  
+  const location = useLocation();
 
 
   useEffect(() => {
     getArticle(id)
-  }, [])
+  }, [location.pathname])
 
   return article ? (
     <section className='news-details'>

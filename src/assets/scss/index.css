@@ -549,6 +549,27 @@ footer .container .lower-pt .flex .social-media a:hover {
   color: #666666;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  z-index: 10;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 20%;
+  background-color: #DAD9D3;
+}
+.scroll-to-top:hover {
+  background-color: #F9D783;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
 .about-company .container {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1064,7 +1085,7 @@ footer .container .lower-pt .flex .social-media a:hover {
 .our-services {
   background-color: #F0EFE9;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 .our-services .background-lines-right {
   position: absolute;
@@ -1826,6 +1847,7 @@ footer .container .lower-pt .flex .social-media a:hover {
   gap: 20px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 @media (min-width: 1440px) {
   .contact-info .container .flex-box {
@@ -1834,13 +1856,28 @@ footer .container .lower-pt .flex .social-media a:hover {
 }
 .contact-info .container .flex-box .contact-box {
   border: 1px solid rgb(156, 156, 156);
-  aspect-ratio: auto;
-  flex: 1;
-  padding: 70px 100px;
-  display: block;
-  justify-content: center;
-  align-items: center;
+  width: 70vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px 0;
   gap: 20px;
+  align-items: start;
+  position: relative;
+  gap: 10px;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .contact-info .container .flex-box .contact-box {
+    padding: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-info .container .flex-box .contact-box {
+    -moz-column-gap: normal;
+         column-gap: normal;
+    width: 420px;
+    padding: 50px;
+  }
 }
 .contact-info .container .flex-box .contact-box .first-row {
   display: flex;
@@ -1886,14 +1923,16 @@ footer .container .lower-pt .flex .social-media a:hover {
 }
 .contact-form .container .form-wrapper #form .errorMessage {
   text-align: center;
-  margin-bottom: 30px;
   color: red;
 }
 .contact-form .container .form-wrapper #form .returnMessage {
+  width: 50%;
   text-align: center;
-  margin-bottom: 30px;
   font-size: 1.5em;
-  padding: 7px;
+  padding: 20px;
+  background-color: #F9D783;
+  border-radius: 15px;
+  margin: 0 auto;
 }
 .contact-form .container .form-wrapper #form label {
   display: inline-block;
@@ -2102,7 +2141,8 @@ footer .container .lower-pt .flex .social-media a:hover {
 .news-details .container .headline .info-details {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
+  font-weight: 500;
 }
 .news-details .container .headline .info-details .yellow-dot {
   font-size: 16px;

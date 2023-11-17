@@ -19,6 +19,7 @@
             width: 70%;
             padding: 20px;
             margin-bottom: 25px;
+
             
             h2 {
                 font-family: 'DM sans', 'Sans Serif';
@@ -30,10 +31,12 @@
                     font-size: 45px;
                 }
             }
+
             .info-details {
                 display: flex;
                 justify-content: space-between;
-                width: 50%;
+                width: 40%;
+                font-weight: 500;
 
                 .yellow-dot {
                     font-size: 16px;

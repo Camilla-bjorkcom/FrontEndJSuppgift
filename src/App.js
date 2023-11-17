@@ -1,4 +1,3 @@
-
 import './assets/scss/index.scss';
 import Contact from './views/Contact';
 import Home from './views/Home';
@@ -7,11 +6,15 @@ import NotFound from './views/NotFound';
 import NewsDetails from './views/NewsDetails';
 import { Routes, Route } from 'react-router-dom';
 import { ArticleProvider } from './Contexts/ArticleContext';
+import AutoScrollToTop from './components/Generics/AutoScrollToTop';
+import ScrolltoTopBtn from './components/Generics/ScrolltoTopBtn';
 
 
 function App() {
   return (
     <ArticleProvider>
+      <AutoScrollToTop />
+      <ScrolltoTopBtn />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />

@@ -1,17 +1,7 @@
-import React, { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { useArticles } from '../../../Contexts/ArticleContext';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Recentpost = ({ title, published, id }) => {
-
-    // const {article, getArticle} = useArticles();
-
-    // useEffect(() => {
-    //      getArticle(id) 
-
-    // }, [])
-
-
 
     function formatDate(dateString) {
         return new Date(dateString).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })

@@ -55,6 +55,7 @@
             gap: 20px;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
 
             @media (min-width: 1440px) {
                 flex-direction: row;
@@ -62,19 +63,29 @@
 
             .contact-box {
                 border: 1px solid rgb(156, 156, 156);
-                aspect-ratio: auto;
-                flex: 1;
-                padding: 70px 100px;
-                display: block;
-                justify-content: center;
-                align-items: center;
+                width: 70vw;
+                height: fit-content;
+                padding: 30px 0;
                 gap: 20px;
+                align-items: start;
+                position: relative;
+                gap: 10px;
+                margin: 0 auto;
+
+                @media (min-width:576px) {
+                    padding: 50px;
+                }
+
+                @media (min-width:768px) {
+                    column-gap: normal;
+                    width: 420px;
+                    padding: 50px;
+                }
 
                 .first-row {
                     display:flex;
                     gap: 50px;
                 }
-
 
                 .contact-icon {
                     grid-area: icon;
@@ -129,16 +140,18 @@
 
                 .errorMessage {
                     text-align: center;
-                    margin-bottom: 30px;
                     color: red;
                 }
 
                 .returnMessage {
+                    width: 50%;
                     text-align: center;
-                    margin-bottom: 30px;
                     font-size: 1.5em;
-                    padding: 7px;
-
+                    padding: 20px;
+                    background-color: #F9D783;
+                    border-radius: 15px;
+                    margin: 0 auto;
+            
                 }
 
                 label {

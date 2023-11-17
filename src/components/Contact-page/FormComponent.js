@@ -42,7 +42,6 @@ const FormComponent = () => {
 
             switch (result.status) {
                 case 200:
-                    displayMessage();
                     form.resetForm();
                     setReturnMessage('Contact form has been received');
                     break;
@@ -58,22 +57,11 @@ const FormComponent = () => {
     })
 
 
-
-const displayMessage = () => {
-    // return active(true);
-}
-
-    // const clearForm = () => {
-    //     setName('');
-    //     setEmail('');
-    //     setMessage('');
-    // }
-    // ${active ? '' : 'd-none'}
     return (
         <div className="form-wrapper">
             <form id="form" onSubmit={form.handleSubmit} noValidate>
                 <p className="errorMessage">{errorMessage}</p>
-                <p className={`returnMessage `}>{returnMessage}</p>
+                {returnMessage && <p className="returnMessage">{returnMessage}</p> }
 
                 <div className="mb-3">
                     <label htmlFor="name">
@@ -93,7 +81,7 @@ const displayMessage = () => {
                     <textarea name="message" id="message" placeholder="Your Message*" className="form-input p-2" tabIndex="3" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur} ></textarea>
                 </div>
 
-                {/* <ButtonYellow text="Send Message" url="#"/> */}
+                
                 <button className="btn-yellow btn btn-warning form-input" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
             </form>
         </div>

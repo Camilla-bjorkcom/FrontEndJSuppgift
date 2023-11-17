@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 const ArticleContext = createContext()
 export const useArticles = () => useContext(ArticleContext); //Custom-hook
