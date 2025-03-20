@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This was my first react project using create-react-app. 
+Implementing javaScript validations in forms and react-router-dom for navigating. 
 
 ## Available Scripts
 
